@@ -5,31 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Sign Up Form</title>
 </head>
 <body>
     <div class="container">
         <div class="leftSide">
-            <img src="leftImage.jpg" alt="UnSplash Image by Ibrahima Toure" class="leftImage" />
+           <p>Photo by <a href="https://unsplash.com/@sotti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Shifaaz shamoon</a> on <a href="https://unsplash.com/s/photos/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+           </p>
         </div>
         <div class="rightSide">
             <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started</p>
             <p>You know you want to</p>
             <form action="" method="post">
-                <label name="firstName">First Name</label>
-                <input type="text" name="firstName" id="firstName" placeholder="First Name">
-                <label name="surName">Surname</label>
-                <input type="text" name="surName" id="surName" placeholder="Surname">
-                <label name="email">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="example@example.com">
-                <label name="phone">Mobile Number</label>
-                <input type="number" name="phone" id="phone" placeholder = "(044)(07777777777)">
-                <label name="password">Password</label>
-                <input type="password" name="password" id="password" placeholder ="Password">
-                <label name="passwordConf">Confirm password</label>
-                <input type="password" name="passwordConf" id="passwordConf" placeholder="Confirm Password">
-                <button type="submit" class="submitBtn">Create Account</button>
+                <fieldset>
+                <legend>Let's do this</legend>
+                <div><label for="firstName">First name</label><input type="text" name="firstName" required></div>
+                <div><label for="surName">Surname</label><input type="text" name="surName" required></div>
+                <div><label for="email">E-Mail</label><input type="email" name="email" required></div>
+                <div><label for="number">Phone Number</label><input type="number" name="number" required></div>
+                <div><label for="password">Password</label><input type="password" name="password" id="password" required></div>
+                <div><label for="passConf" id="confirm_password_label">Confirm Password</label><input type="password" name="passConf" id="confirm_password" required></div>
+            </fieldset>
+            <button type="submit" class="submitBtn">Create Account</button>
             </form>
 
         </div>

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
+
+*{
+    font-family: 'Shippori Antique B1', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    color: black;
+}
+.container{
+    width: 100vw;
+    height: calc(100vh);
+    display: flex;
+}
+.leftSide {
+    flex-basis: 50%;
+    background-image: url(leftImage.jpg);
+    background-size: cover;
+position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.leftSide::before{
+    content:"RAMY'S FORM";
+    letter-spacing: 1rem;
+    background-color: rgba(0, 0, 0,0.5);
+    color: white;
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.leftSide p, .leftSide a{
+    color: white;
+    background-color:rgba(0, 0, 0,0.5);
+    font-size: .7rem;
+}
+.leftSide p{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+.rightSide{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 5% 0px 5%;
+}
+.rightSide form fieldset{
+    width: 90%;
+    display:flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: none;
+    box-shadow: 5px 10px 10px #dfdfdf;;
+
+}
+@media only screen and (max-width : 800px) {
+    .rightSide form fieldset{
+        flex-direction: column;
+    }
+}
+p{
+    font-size: 1rem;
+}
+
+.rightSide form fieldset div{
+    display:flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    margin-top:10px;
+}
+
+.rightSide form div input{
+    width: 75%;
+    height:1.5rem;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(211, 211, 211,.4)
+}
+.submitBtn{
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: rgb(23, 126, 185);
+    color: white;
+    padding: 10px;
+}
